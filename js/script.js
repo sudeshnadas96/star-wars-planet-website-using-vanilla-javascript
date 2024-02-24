@@ -16,8 +16,7 @@ function renderPlanetCard(planet) {
         <p>Climate: ${planet.climate}</p>
         <p>Population: ${planet.population}</p>
         <p>Terrain: ${planet.terrain}</p>
-        <p>Residents:</p>
-        <ul class="resident-list"></ul>
+        <ul class="resident-list">Residents:</ul>
     `;
     planetsContainer.appendChild(card);
 
