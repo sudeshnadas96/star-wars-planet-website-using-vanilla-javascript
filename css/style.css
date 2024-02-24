@@ -72,12 +72,12 @@ header .site-brand img{
 .resident-list {
     list-style: none;
     padding: 15px;
-    background: linear-gradient(black, rgba(111, 15, 15, 0.589));
+    background: linear-gradient(#2b030399,#5a0c0c, #111864 40%, #5a0c0c, #2b030380);
 }
 
 .resident-list li{
     padding: 5px 20px;
-    background: linear-gradient(black, rgba(111, 15, 15, 0.589));
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(111, 15, 15, 0.521));
 }
 
 .pagination {
