@@ -70,9 +70,11 @@ header .site-brand img{
     background: linear-gradient(#2b0303bd, #5a0c0c46, #2b0303af);
 }
 
-.planet-card:hover{
+.planet-card:hover, .planet-card:active{
     scale: 1.02;
 }
+
+.planet-card:touch
 
 .resident-list {
     list-style: none;
@@ -85,7 +87,7 @@ header .site-brand img{
     background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(111, 15, 15, 0.521));
 }
 
-.resident-list li:hover{
+.resident-list li:hover, .resident-list li:active{
     scale: 1.02;
 }
 
