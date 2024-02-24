@@ -16,23 +16,26 @@ function renderPlanetCard(planet) {
         <p>Climate: ${planet.climate}</p>
         <p>Population: ${planet.population}</p>
         <p>Terrain: ${planet.terrain}</p>
-        <ul class="resident-list">Residents:</ul>
+        ${planet.residents.length !== 0 ? '<ul class="resident-list">Residents:</ul>' : ''}
     `;
     planetsContainer.appendChild(card);
 
-    const residentList = card.querySelector('.resident-list');
-    planet.residents.forEach(async (residentUrl) => {
-        const residentResponse = await fetch(residentUrl);
-        const residentData = await residentResponse.json();
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `
-            <strong>Name:</strong> ${residentData.name}, 
-            <strong>Height:</strong> ${residentData.height}, 
-            <strong>Mass:</strong> ${residentData.mass}, 
-            <strong>Gender:</strong> ${residentData.gender}
-        `;
-        residentList.appendChild(listItem);
-    });
+    // render residents if available
+    if (planet.residents.length !== 0) {
+        const residentList = card.querySelector('.resident-list');
+        planet.residents.forEach(async (residentUrl) => {
+            const residentResponse = await fetch(residentUrl);
+            const residentData = await residentResponse.json();
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                <strong>Name:</strong> ${residentData.name}, 
+                <strong>Height:</strong> ${residentData.height}, 
+                <strong>Mass:</strong> ${residentData.mass}, 
+                <strong>Gender:</strong> ${residentData.gender}
+            `;
+            residentList.appendChild(listItem);
+        });
+    }
 }
 
 function renderPagination(data) {
