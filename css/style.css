@@ -114,3 +114,9 @@ header .site-brand img{
     background-color: #808080;
     cursor: not-allowed;
 }
+
+@media only screen and (max-width: 576px) {
+    header {
+        height: 12rem;
+    }
+  }
