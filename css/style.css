@@ -98,7 +98,7 @@ header .site-brand img{
 }
 
 .pagination button {
-    background-color: #4CAF50;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.768), rgba(109, 12, 12, 0.648));
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -107,11 +107,11 @@ header .site-brand img{
 }
 
 .pagination button:hover {
-    background-color: #45a049;
+    background-color: rgb(241, 206, 50);
 }
 
 .pagination button:disabled {
-    background-color: #808080;
+    background-color: #d1cfcf;
     cursor: not-allowed;
 }
 
