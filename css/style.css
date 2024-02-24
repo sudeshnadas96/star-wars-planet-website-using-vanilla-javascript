@@ -1,0 +1,84 @@
+@import url('../starwar-font/stylesheet.css');
+
+body {
+    letter-spacing: .2rem;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(15, 0, 0, 0.432), rgba(2, 2, 2, 0.432)), url(../images/pattern-2.webp) repeat;
+    background-size: contain;
+    color: rgba(241, 206, 50, 0.722);
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    font-family: 'star_jedi_logo_monolineRg';
+    background: linear-gradient(black, rgba(111, 15, 15, 0.589));
+    color: white;
+    height: 6rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: -1px 20px 25px rgba(37, 1, 1, 0.858);
+}
+
+header .site-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(241, 206, 50);
+    font-size: 4rem;
+    text-shadow: 2px 2px rgba(255, 255, 0, 0.526);
+}
+
+header .site-brand img{
+    height: 5rem;
+    shape-rendering: optimizeSpeed;
+}
+
+.container {
+    font-family: 'star_jediregular';
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.planet-card {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.resident-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #45a049;
+}
+
+.pagination button:disabled {
+    background-color: #808080;
+    cursor: not-allowed;
+}
