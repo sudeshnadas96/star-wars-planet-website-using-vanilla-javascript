@@ -67,6 +67,11 @@ header .site-brand img{
     border-radius: 5px;
     margin: 10px 0;
     padding: 10px;
+    background: linear-gradient(#2b0303bd, #5a0c0c46, #2b0303af);
+}
+
+.planet-card:hover{
+    scale: 1.02;
 }
 
 .resident-list {
@@ -78,6 +83,10 @@ header .site-brand img{
 .resident-list li{
     padding: 5px 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(111, 15, 15, 0.521));
+}
+
+.resident-list li:hover{
+    scale: 1.02;
 }
 
 .pagination {
