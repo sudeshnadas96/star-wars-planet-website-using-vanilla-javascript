@@ -3,7 +3,7 @@ const paginationContainer = document.getElementById('pagination-container');
 let currentPage = 1;
 
 async function fetchPlanets(page) {
-    const response = await fetch(`https://swapi.dev/api/planets/?page=${page}`);
+    const response = await fetch(`https://swapi.py4e.com/api/planets/?page=${page}`);
     const data = await response.json();
     return data;
 }
